@@ -1,0 +1,55 @@
+.scrollContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+}
+
+.scrollWrapper {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scrollAnim 20s linear infinite;
+}
+
+/* Smooth hover pause */
+.scrollContainer:hover .scrollWrapper {
+    animation-play-state: paused;
+}
+
+/* Animation logic */
+@keyframes scrollAnim {
+    to {
+        transform: translateX(calc(-50% - 1rem));
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+        letter-spacing: 0.1em;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        letter-spacing: normal;
+    }
+}
+
+.animate-fadeUp {
+    animation: fadeUp 3s ease-out forwards;
+}
