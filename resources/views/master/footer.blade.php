@@ -17,15 +17,32 @@
     </div>
 
     <!-- Social Links -->
-    <div>
-      <h4 class="mb-3 text-lg font-semibold">Follow Us</h4>
-      <div class="flex gap-4">
-        <a href="#" class="hover:text-gray-300"><i class="text-2xl fab fa-linkedin"></i></a>
-        <a href="#" class="hover:text-gray-300"><i class="text-2xl fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-gray-300"><i class="text-2xl fab fa-facebook"></i></a>
-      </div>
-    </div>
+<div>
+  <h4 class="mb-3 text-lg font-semibold">Follow Us</h4>
+
+  <div class="flex flex-col justify-start gap-4">
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/pt-duta-anugrah-damai-sejahtera/posts/?feedView=all"
+       class="flex items-center gap-2 hover:text-gray-300">
+      <img src="{{ asset('linkedin.png') }}" class="h-8" alt="LinkedIn">
+      <span class = 'text-sm'>PT. Duta Anugrah Damai Sejahtera</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/ptdads/" class="flex items-center gap-2 hover:text-gray-300">
+      <img src = "{{ asset('instagram.png') }}" class ='h-8' alt='Instagram Link'>
+      <span class = 'text-sm'>ptdads</span>
+    </a>
+
+    <!-- Facebook -->
+    <a href="#" class="hover:text-gray-300">
+      <i class="text-2xl fab fa-facebook"></i>
+    </a>
+
   </div>
+</div>
+
 
   <div class="pt-6 mt-8 text-sm text-center text-gray-300 border-t border-white/20">
     © {{ date('Y') }} PT Dads. All rights reserved.
