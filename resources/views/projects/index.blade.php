@@ -1,5 +1,5 @@
 @extends('master.layout')
-@section('title', 'Home | PT Duta Anugrah')
+@section('title', 'Projects | PT Duta Anugrah')
 @section('content')
     @include('master.navbar')
 

@@ -26,7 +26,7 @@
                     <div x-show="open" x-transition
                         class="absolute left-0 z-50 py-2 mt-2 text-gray-800 bg-white rounded-md shadow-lg w-44"
                         style="display: none;">
-                        <a href="#"
+                        <a href="{{ route('directors') }}"
                             class="block px-4 py-2 transition hover:bg-red-100 hover:text-red-600">Director</a>
                         <a href="#"
                             class="block px-4 py-2 transition hover:bg-red-100 hover:text-red-600">Organization</a>
@@ -102,7 +102,7 @@
                     </svg>
                 </button>
                 <div x-show="open" x-transition class="pl-3 ml-4 space-y-2 border-l border-gray-200">
-                    <a href="#" class="block py-1 text-[12px] hover:text-red-600">Director</a>
+                    <a href="{{ route('directors') }}" class="block py-1 text-[12px] hover:text-red-600">Director</a>
                     <a href="#" class="block py-1 text-[12px] hover:text-red-600">Organization</a>
                 </div>
             </div>
