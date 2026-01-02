@@ -9,4 +9,6 @@ use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/projects', [ProjectController::class,'index'])->name('projects');
+
 Route::get('/directors', [DirectorController::class,'index'])->name('directors');
+Route::get('/organizations', [DirectorController::class,'organization'])->name('organization');

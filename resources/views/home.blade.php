@@ -60,49 +60,44 @@
         <div class="relative">
             <img src="{{ asset('sl2.jpg') }}" alt="Team" class="w-full h-72 md:h-[450px] object-cover">
 
-            <div class="absolute inset-0 flex items-center justify-center bg-black/60">
-                <div
-                    class="grid w-full max-w-6xl grid-cols-3 gap-6 px-6 py-8 text-center text-white md:grid-cols-3 md:py-16">
+           <div class="absolute inset-0 flex items-center justify-center bg-black/60">
+    <div class="grid w-full max-w-6xl grid-cols-3 gap-6 px-6 py-8 text-center text-white md:grid-cols-3 md:py-16">
 
-                    <div class="flex flex-col items-center">
-                        <div class="p-3 mb-3 rounded-full bg-red-600/80">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a4 4 0 00-3-3.87V12a7 7 0 10-14 0v2.13A4 4 0 002 18v2h5" />
-                            </svg>
-                        </div>
-                        <h4 class="text-[8px]  md:text-lg font-bold">Clients</h4>
-                        <p class="mt-1 text-xl font-extrabold text-red-400 md:text-3xl">100</p>
-                    </div>
-
-                    <div class="flex flex-col items-center">
-                        <div class="p-3 mb-3 rounded-full bg-red-600/80">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM8 11c1.104 0 2-.896 2-2S9.104 7 8 7 6 7.896 6 9s.896 2 2 2zm8 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4zm-8 0c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-[8px] md:text-lg font-bold">Employees</h4>
-                        <p class="mt-1 text-xl font-extrabold text-red-400 md:text-3xl">300</p>
-                    </div>
-
-                    <div class="flex flex-col items-center">
-                        <div class="p-3 mb-3 rounded-full bg-red-600/80">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-[8px] md:text-lg font-bold text-center px-3">Infrastructure Completion</h4>
-                        <p class="mt-1 text-xl font-extrabold text-red-400 md:text-3xl">10,000</p>
-                    </div>
-                </div>
+        <div class="flex flex-col items-center">
+            <div class="p-3 mb-3 rounded-full bg-red-600/80">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87V12a7 7 0 10-14 0v2.13A4 4 0 002 18v2h5" />
+                </svg>
             </div>
+            <h4 class="text-[8px] md:text-lg font-bold">Clients</h4>
+            <p class="mt-1 text-xl font-extrabold text-red-400 stat-number md:text-3xl" data-target="4500">0</p>
         </div>
-    </section>
+
+        <div class="flex flex-col items-center">
+            <div class="p-3 mb-3 rounded-full bg-red-600/80">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM8 11c1.104 0 2-.896 2-2S9.104 7 8 7 6 7.896 6 9s.896 2 2 2zm8 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4zm-8 0c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z" />
+                </svg>
+            </div>
+            <h4 class="text-[8px] md:text-lg font-bold">Employees</h4>
+            <p class="mt-1 text-xl font-extrabold text-red-400 stat-number md:text-3xl" data-target="400">0</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="p-3 mb-3 rounded-full bg-red-600/80">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-10 md:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            </div>
+            <h4 class="text-[8px] md:text-lg font-bold text-center px-3">Infrastructure Completion</h4>
+            <p class="mt-1 text-xl font-extrabold text-red-400 stat-number md:text-3xl" data-target="10000">0</p>
+        </div>
+    </div>
+</div>
+
+
+
+</section>
     <!-- Our Clients Section -->
     <section class="py-16 overflow-hidden bg-gray-100">
         <div class="max-w-6xl px-6 mx-auto text-center">

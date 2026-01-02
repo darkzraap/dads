@@ -20,7 +20,7 @@
 
         <!-- Social Links -->
         <div>
-            <h4 class="mb-3 text-lg font-semibold">Follow Us</h4>
+            <h4 class="mb-3 text-lg font-semibold">More of Us</h4>
 
             <div class="flex flex-col justify-start gap-4">
 
@@ -37,15 +37,7 @@
                     <span class = 'text-sm'>ptdads</span>
                 </a>
 
-                <a href="https://wa.me/+6282325256266" class="flex items-center gap-2 hover:text-gray-300">
-                    <img src = "{{ asset('telephone.png') }}" class ='h-5' alt='Instagram Link'>
-                    <span class = 'text-sm'>+6282325256266</span>
-                </a>
 
-                <a href="https://www.instagram.com/ptdads/" class="flex items-center gap-2 hover:text-gray-300">
-                    <img src = "{{ asset('email.png') }}" class ='h-5' alt='Instagram Link'>
-                    <span class = 'text-sm'>info@ptdads.com</span>
-                </a>
 
                 <a href="https://maps.app.goo.gl/FTi1NDxsNGCVvLQ17" class="flex items-center gap-2 hover:text-gray-300">
                     <img src = "{{ asset('map.png') }}" class ='h-5' alt='Instagram Link'>

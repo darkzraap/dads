@@ -23,13 +23,13 @@
 
 
     <section class="py-12">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="flex flex-row gap-12 justify-center">
-                <a href='#' class=" text-lg font-semibold hover:text-red-500">Starlite</a>
-                <a href='#' class=" text-lg font-semibold hover:text-red-500">AsiaNet</a>
-                <a href='#' class=" text-lg font-semibold hover:text-red-500">Fiberstar</a>
-                <a href='#' class=" text-lg font-semibold hover:text-red-500">Telkom</a>
-                <a href='#' class=" text-lg font-semibold hover:text-red-500">ZTE</a>
+        <div class="max-w-5xl px-6 mx-auto">
+            <div class="flex flex-row justify-center gap-12">
+                <a href='#' class="text-lg font-semibold hover:text-red-500">Starlite</a>
+                <a href='#' class="text-lg font-semibold hover:text-red-500">AsiaNet</a>
+                <a href='#' class="text-lg font-semibold hover:text-red-500">Fiberstar</a>
+                <a href='#' class="text-lg font-semibold hover:text-red-500">Telkom</a>
+                <a href='#' class="text-lg font-semibold hover:text-red-500">ZTE</a>
             </div>
         </div>
     </section>
@@ -72,26 +72,21 @@
 
 
     <section class="py-12">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="px-6 mx-auto max-w-7xl">
             <div
-                class="grid gap-8
-                    grid-cols-1
-                    sm:grid-cols-2
-                    md:grid-cols-3
-                    lg:grid-cols-4">
+                class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div
-                    class="bg-white  shadow-xl overflow-hidden
-           hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
 
                     <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
 
                     <div class="flex flex-col justify-between p-5 min-h-[11rem]">
                         <div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
                                 Starlite Project
                             </h3>
 
-                            <p class="mt-2 text-sm sm:text-sm text-gray-600 leading-relaxed">
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
                                 A modern web application built to showcase creative projects
                                 with clean UI and smooth interactions.
                             </p>
@@ -104,18 +99,17 @@
                 </div>
 
                 <div
-                    class="bg-white  shadow-xl overflow-hidden
-           hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
 
                     <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
 
                     <div class="flex flex-col justify-between p-5 min-h-[11rem]">
                         <div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
                                 Starlite Project
                             </h3>
 
-                            <p class="mt-2 text-sm sm:text-sm text-gray-600 leading-relaxed">
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
                                 A modern web application built to showcase creative projects
                                 with clean UI and smooth interactions.
                             </p>
@@ -130,43 +124,17 @@
 
 
                 <div
-                    class="bg-white  shadow-xl overflow-hidden
-           hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
 
                     <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
 
                     <div class="flex flex-col justify-between p-5 min-h-[11rem]">
                         <div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
                                 Starlite Project
                             </h3>
 
-                            <p class="mt-2 text-sm sm:text-sm text-gray-600 leading-relaxed">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
-                            </p>
-                        </div>
-
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
-                    </div>
-                </div>
-
-
-                <div
-                    class="bg-white  shadow-xl overflow-hidden
-           hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
-                                Starlite Project
-                            </h3>
-
-                            <p class="mt-2 text-sm sm:text-sm text-gray-600 leading-relaxed">
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
                                 A modern web application built to showcase creative projects
                                 with clean UI and smooth interactions.
                             </p>
@@ -180,18 +148,41 @@
 
 
                 <div
-                    class="bg-white  shadow-xl overflow-hidden
-           hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
 
                     <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
 
                     <div class="flex flex-col justify-between p-5 min-h-[11rem]">
                         <div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
                                 Starlite Project
                             </h3>
 
-                            <p class="mt-2 text-sm sm:text-sm text-gray-600 leading-relaxed">
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
+                                A modern web application built to showcase creative projects
+                                with clean UI and smooth interactions.
+                            </p>
+                        </div>
+
+                        <span class="mt-4 text-xs font-medium text-gray-400">
+                            March 12, 2025
+                        </span>
+                    </div>
+                </div>
+
+
+                <div
+                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
+
+                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
+
+                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
+                                Starlite Project
+                            </h3>
+
+                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
                                 A modern web application built to showcase creative projects
                                 with clean UI and smooth interactions.
                             </p>
