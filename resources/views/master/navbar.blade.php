@@ -11,29 +11,11 @@
             <nav class="relative items-center hidden space-x-6 text-sm font-medium md:flex">
                 <a href="{{ route('home') }}" class="hover:text-red-400">Home</a>
                 <a href="{{ route('projects') }}" class="hover:text-red-400">Project</a>
+                <a href="{{ route('directors') }}" class="hover:text-red-400">Our Team</a>
 
-                <!-- Dropdown Our Team -->
-                <div x-data="{ open: false }" class="relative">
-                    <button @click="open = !open" @click.outside="open = false"
-                        class="flex items-center gap-1 hover:text-red-400 focus:outline-none">
-                        Our Team
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
 
-                    <div x-show="open" x-transition
-                        class="absolute left-0 z-50 py-2 mt-2 text-gray-800 bg-white rounded-md shadow-lg w-44"
-                        style="display: none;">
-                        <a href="{{ route('directors') }}"
-                            class="block px-4 py-2 transition hover:bg-red-100 hover:text-red-600">Director</a>
-                        <a href="{{ route('organization') }}"
-                            class="block px-4 py-2 transition hover:bg-red-100 hover:text-red-600">Organization</a>
-                    </div>
-                </div>
 
-                <a href="#" class="hover:text-red-400">News</a>
+                <a href="{{ route('news') }}" class="hover:text-red-400">News</a>
                 <a href="#" class="hover:text-red-400">Awards</a>
                 <a href="#" class="hover:text-red-400">Career</a>
                 <a href="#" class="hover:text-red-400">Contact</a>
@@ -89,25 +71,10 @@
 
             <a href="{{ route('home') }}" class="block py-2 hover:text-red-600">Home</a>
             <a href="{{ route('projects') }}" class="block py-2 hover:text-red-600">Project</a>
+             <a href="{{ route('directors') }}" class="block py-2 hover:text-red-600">Our Team</a>
 
-            <!-- Dropdown inside mobile -->
-            <div x-data="{ open: false }">
-                <button @click="open = !open"
-                    class="flex items-center justify-between w-full py-2 text-left hover:text-red-600">
-                    Our Team
-                    <svg xmlns="http://www.w3.org/2000/svg" :class="{ 'rotate-180': open }"
-                        class="w-4 h-4 transition-transform transform" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-                <div x-show="open" x-transition class="pl-3 ml-4 space-y-2 border-l border-gray-200">
-                    <a href="{{ route('directors') }}" class="block py-1 text-[12px] hover:text-red-600">Director</a>
-                    <a href="{{ route('organization') }}" class="block py-1 text-[12px] hover:text-red-600">Organization</a>
-                </div>
-            </div>
 
-            <a href="#" class="block py-2 hover:text-red-600">News</a>
+            <a href={{ route('news') }} class="block py-2 hover:text-red-600">News</a>
             <a href="#" class="block py-2 hover:text-red-600">Awards</a>
             <a href="#" class="block py-2 hover:text-red-600">Career</a>
             <a href="#" class="block py-2 hover:text-red-600">Contact</a>
