@@ -71,7 +71,7 @@
 
             <a href="{{ route('home') }}" class="block py-2 hover:text-red-600">Home</a>
             <a href="{{ route('projects') }}" class="block py-2 hover:text-red-600">Project</a>
-             <a href="{{ route('directors') }}" class="block py-2 hover:text-red-600">Our Team</a>
+            <a href="{{ route('directors') }}" class="block py-2 hover:text-red-600">Our Team</a>
 
 
             <a href={{ route('news') }} class="block py-2 hover:text-red-600">News</a>
