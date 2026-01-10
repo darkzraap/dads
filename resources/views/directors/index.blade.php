@@ -12,7 +12,7 @@
 
         <!-- Hero Content -->
         <div class="relative px-6 text-center text-white">
-            <h1 class="mb-3 text-3xl font-extrabold md:text-5xl drop-shadow-lg ">
+            <h1 class="mb-3 text-4xl font-extrabold md:text-6xl drop-shadow-2xl ">
                 Our Teams
             </h1>
         </div>

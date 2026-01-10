@@ -3,38 +3,39 @@
 @section('content')
     @include('master.navbar')
 
+    <section class="relative flex items-center justify-center w-full h-[40vh] pt-20 bg-fixed bg-center bg-cover"
+        style="background-image: url('{{ asset('bg.png') }}');">
 
-    <section class="relative flex items-center justify-center w-full h-[35vh] pt-24 bg-center bg-cover"
-        style="background-image: url('bg.png');">
-
-        <!-- Red Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-red-900/70 to-black/60"></div>
 
-        <!-- Hero Content -->
-        <div class="relative px-6 text-center text-white">
-            <h1 class="mb-3 text-3xl font-extrabold md:text-5xl drop-shadow-lg ">
+        <div class="relative z-10 px-6 text-center text-white">
+
+            <h1 class="mb-3 text-4xl font-extrabold md:text-6xl drop-shadow-2xl">
                 Our Projects
             </h1>
-
-
+            <p class="max-w-xl mx-auto text-sm text-gray-200 md:text-base">
+                Membangun infrastruktur digital Indonesia melalui dedikasi dan profesionalisme tinggi.
+            </p>
         </div>
     </section>
 
-
-
-    <section class="py-12">
+    <section class="sticky top-[64px] z-20 py-4 transition-all duration-300 bg-transparent backdrop-blur-md">
         <div class="max-w-5xl px-6 mx-auto">
-            <div class="flex flex-row justify-center gap-12">
-                <a href='#' class="text-lg font-semibold hover:text-red-500">Starlite</a>
-                <a href='#' class="text-lg font-semibold hover:text-red-500">AsiaNet</a>
-                <a href='#' class="text-lg font-semibold hover:text-red-500">Fiberstar</a>
-                <a href='#' class="text-lg font-semibold hover:text-red-500">Telkom</a>
-                <a href='#' class="text-lg font-semibold hover:text-red-500">ZTE</a>
+            <div
+                class="flex flex-wrap justify-center gap-2 px-4 py-2 border rounded-full shadow-sm md:gap-4 bg-white/20 border-white/30">
+                @php $categories = ['All', 'Starlite', 'AsiaNet', 'Fiberstar', 'Telkom', 'ZTE']; @endphp
+                @foreach ($categories as $cat)
+                    <a href="#"
+                        class="filter-btn px-4 py-1.5 text-xs md:text-sm font-bold transition-all border-2 rounded-full
+                        {{ $loop->first
+                            ? 'bg-red-600 text-white border-red-600 shadow-lg shadow-red-600/30'
+                            : 'bg-white/40 text-gray-800 border-transparent hover:bg-red-600 hover:text-white hover:border-red-600' }}">
+                        {{ $cat }}
+                    </a>
+                @endforeach
             </div>
         </div>
     </section>
-
-
     <section class="relative w-full h-[480px] md:h-[560px] overflow-hidden">
         <img src="{{ asset('ftpro.jpeg') }}" alt="Project Showcase" class="absolute inset-0 object-cover w-full h-full">
 
@@ -70,138 +71,53 @@
         </div>
     </section>
 
-
-    <section class="py-12">
+    <section class="py-20 bg-gray-50">
         <div class="px-6 mx-auto max-w-7xl">
-            <div
-                class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div
-                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Latest Works</h2>
+                <div class="w-20 h-1 bg-red-600"></div>
+            </div>
 
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
-                                Starlite Project
-                            </h3>
-
-                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
-                            </p>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                @for ($i = 0; $i < 6; $i++)
+                    <div
+                        class="overflow-hidden transition-all duration-500 bg-white border border-gray-100 shadow-sm group rounded-xl hover:shadow-2xl">
+                        <div class="relative overflow-hidden">
+                            <img src="{{ asset('example.jpeg') }}"
+                                class="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 text-xs font-bold text-white rounded bg-red-600/90">Starlite</span>
+                            </div>
                         </div>
 
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
-                    </div>
-                </div>
-
-                <div
-                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
-
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
-                                Starlite Project
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 transition-colors group-hover:text-red-600">
+                                Starlite Project Expansion
                             </h3>
-
-                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
+                            <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                                Penyediaan layanan Fiber To The Home (FTTH) untuk area urban dengan standar instalasi
+                                tinggi.
                             </p>
+
+                            <div class="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+                                <span class="text-xs font-semibold tracking-tighter text-gray-400 uppercase">March
+                                    2025</span>
+                                <a href="#" class="text-sm italic font-bold text-red-600 hover:underline">Read More
+                                    →</a>
+                            </div>
                         </div>
-
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
                     </div>
-                </div>
+                @endfor
+            </div>
 
-
-
-                <div
-                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
-
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
-                                Starlite Project
-                            </h3>
-
-                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
-                            </p>
-                        </div>
-
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
-                    </div>
-                </div>
-
-
-                <div
-                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
-
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
-                                Starlite Project
-                            </h3>
-
-                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
-                            </p>
-                        </div>
-
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
-                    </div>
-                </div>
-
-
-                <div
-                    class="overflow-hidden transition-all duration-300 bg-white shadow-xl hover:-translate-y-2 hover:shadow-2xl">
-
-                    <img src="{{ asset('example.jpeg') }}" class="object-cover w-full h-[12rem] sm:h-[14rem]">
-
-                    <div class="flex flex-col justify-between p-5 min-h-[11rem]">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 sm:text-xl">
-                                Starlite Project
-                            </h3>
-
-                            <p class="mt-2 text-sm leading-relaxed text-gray-600 sm:text-sm">
-                                A modern web application built to showcase creative projects
-                                with clean UI and smooth interactions.
-                            </p>
-                        </div>
-
-                        <span class="mt-4 text-xs font-medium text-gray-400">
-                            March 12, 2025
-                        </span>
-                    </div>
-                </div>
-
+            <div class="mt-16 text-center">
+                <button
+                    class="px-8 py-3 font-bold text-red-600 transition border-2 border-red-600 rounded-lg hover:bg-red-600 hover:text-white">
+                    Load More Projects
+                </button>
             </div>
         </div>
     </section>
-
-
-
-    <br><br>
-
 
     @include('master.footer')
 @endsection
