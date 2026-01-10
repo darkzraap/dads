@@ -79,7 +79,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM8 11c1.104 0 2-.896 2-2S9.104 7 8 7 6 7.896 6 9s.896 2 2 2zm8 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4zm-8 0c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z" />
                 </svg>
             </div>
-            <h4 class="text-[8px] md:text-lg font-bold">Employees</h4>
+            <h4 class="text-[8px] md:text-lg font-bold">Something</h4>
             <p class="mt-1 text-xl font-extrabold text-red-400 stat-number md:text-3xl" data-target="400">0</p>
         </div>
 

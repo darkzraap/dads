@@ -9,14 +9,14 @@
 
             <!-- Desktop Menu -->
             <nav class="relative items-center hidden space-x-6 text-sm font-medium md:flex">
-                <a href="{{ route('home') }}" class="hover:text-red-400">Home</a>
-                <a href="{{ route('projects') }}" class="hover:text-red-400">Project</a>
-                <a href="{{ route('directors') }}" class="hover:text-red-400">Our Team</a>
+               <a href="{{ route('home') }}" class="hover:text-red-400 {{ request()->routeIs('home') ? 'text-red-600' : 'text-white' }}">Home</a>
+                <a href="{{ route('projects') }}" class="hover:text-red-400 {{ request()->routeIs('projects') ? 'text-red-600' : 'text-white    ' }}">Project</a>
+                <a href="{{ route('directors') }}" class="hover:text-red-400 {{ request()->routeIs('directors') ? 'text-red-600' : 'text-white' }}">Our Team</a>
 
 
 
-                <a href="{{ route('news') }}" class="hover:text-red-400">News</a>
-                <a href="#" class="hover:text-red-400">Awards</a>
+                <a href="{{ route('news') }}" class="hover:text-red-400 {{ request()->routeIs('news')? 'text-red-600' : 'text-white' }}">News</a>
+                <a href="{{ route('awards') }}" class="hover:text-red-400 {{ request()->routeIs('awards')? 'text-red-600' : 'text-white' }}">Awards</a>
                 <a href="#" class="hover:text-red-400">Career</a>
                 <a href="#" class="hover:text-red-400">Contact</a>
                 <div x-data="{ open: false }" class="relative">
